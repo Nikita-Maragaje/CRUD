@@ -1,0 +1,6 @@
+<h3>Books List</h3>
+<% @books.each do |book| %>
+<%= link_to book.name, book %>
+<br>
+<% end %>
+<%= link_to "new", new_book_path %>
